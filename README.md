@@ -224,7 +224,7 @@ $hydrator = new My\Hydrator();
 $users = [];
 
 foreach ($mergedRelationships as $row) {
-      $hydrator->hydrate($row);
+      $users[] = $hydrator->hydrate($row);
 }
 ```
 
